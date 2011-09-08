@@ -11,6 +11,7 @@ gem 'json'
 
 # authorization gems
 gem "cancan"
+gem "devise"
 
 # Gems used only for assets and not required
 # in production environments by default.
