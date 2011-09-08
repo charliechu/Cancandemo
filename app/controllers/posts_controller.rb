@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:show, :index]
   before_filter :find_post, :only => [:edit, :update, :show, :destroy]
   def index
     @posts = Post.all
