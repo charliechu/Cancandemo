@@ -1,0 +1,6 @@
+<%= form_for @post, :url => posts_path(@post) do |f| %>
+    <%= f.label :subject, "Subject" %>
+    <%= f.text_field :subject %>
+    <%= f.text_area :content %>
+    <%= f.submit "Create" %>
+<% end %>
